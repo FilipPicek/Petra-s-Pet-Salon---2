@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Speech bubble for newsletter dog */
+.speech-bubble {
+  position: absolute;
+  top: -12px; /* positioned relative to wrapper */
+  left: 40px;
+  background: white;
+  color: #064e3b; /* green-800 */
+  padding: 6px 10px;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  white-space: nowrap;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 14px;
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+@media (min-width: 1024px) {
+  .speech-bubble { top: -16px; left: 56px; font-size: 1rem; }
+  .speech-bubble::after { left: 18px; }
+}
