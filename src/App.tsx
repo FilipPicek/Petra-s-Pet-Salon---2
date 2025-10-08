@@ -372,12 +372,12 @@ function App() {
 
             <div className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6">
               {[
-                'slikap1.png',
-                'slikap2.png',
-                'slikap3.png',
-                'slikap4.png',
-                'slikap5.png',
-                'slikap6.png'
+                'dist/slikap1.png',
+                'dist/slikap2.png',
+                'dist/slikap3.png',
+                'dist/slikap4.png',
+                'dist/slikap5.png',
+                'dist/slikap6.png'
               ].map((img, idx) => (
                 <div key={idx} className="aspect-square bg-gradient-to-br from-green-200 to-cream-200 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:scale-105">
                   {img ? (
